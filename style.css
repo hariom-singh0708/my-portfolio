@@ -1,0 +1,94 @@
+/* === Base Styles === */
+body {
+  scroll-behavior: smooth;
+}
+
+.text-purple {
+  color: #7952b3;
+}
+
+/* === Hero Section === */
+.hero-section {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1599837565318-67429bde7162?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* === Hero Quote Card === */
+#hero .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 70%;
+}
+
+#hero .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* === Navbar === */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+/* === Profile Image === */
+.profile-img {
+  max-width: 220px;
+  height: auto;
+  border: 3px solid black;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  border-color: #ffffff; /* Optional: Use #0d6efd for Bootstrap blue */
+}
+
+/* === Project Cards === */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px black !important;
+  border-color: #ffffff;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.02);
+}
+
+/* === Social Icons === */
+.social-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
